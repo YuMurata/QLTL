@@ -84,6 +84,7 @@ public:
 			q = (1 - SG)*maxQ[Org] + SG*maxQ[Near];
 
 			this->lsh.add(s_to_lsh(org_s));
+			this->Pruning();
 		}
 	}
 	

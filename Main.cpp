@@ -91,9 +91,9 @@ int main()
 		return vector<SAQ>();
 	};
 
-	auto write = [](const QLTL::QTable &saq)
+	auto write = [](const QLTL::QTable &saq,vector<vector<string>> *str)
 	{
-		return vector<vector<string>>();
+		//return vector<vector<string>>();
 	};
 
 	auto slsh = [](const S &s)
