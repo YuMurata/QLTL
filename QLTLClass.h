@@ -81,7 +81,7 @@ public:
 			value[Org] = (1 - this->learn_rate)*q + this->learn_rate*(this->R(s2[Org]) + this->r*maxQ[Org]);
 			value[Near] = maxQ[Near];
 
-			q = (1 - SG)*maxQ[Org] + SG*maxQ[Near];
+			q = (1 - SG)*value[Org] + SG*value[Near];
 
 			this->lsh.add(s_to_lsh(org_s));
 			this->Pruning();
